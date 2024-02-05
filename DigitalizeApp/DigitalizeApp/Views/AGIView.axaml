@@ -1,0 +1,24 @@
+<UserControl
+    x:Class="DigitalizeApp.Views.AGIView"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="using:DigitalizeApp.Views"
+    xmlns:vm="using:DigitalizeApp.ViewModels"
+    d:DesignHeight="600"
+    d:DesignWidth="800"
+    x:DataType="vm:AGIViewModel"
+    mc:Ignorable="d">
+
+    <Design.DataContext>
+        <vm:AGIViewModel />
+    </Design.DataContext>
+
+    <StackPanel>
+
+        <TextBlock Text="An artificial general intelligence (AGI) is a hypothetical type of intelligent agent which, if realized, could learn to accomplish any intellectual task that human beings or animals can perform. Alternatively, AGI has been defined as an autonomous system that surpasses human capabilities and is capable of continuously improving itself. This leap would inevitably lead to what is today called a technological singularity." Theme="{StaticResource pagesMainText}" />
+
+    </StackPanel>
+
+</UserControl>

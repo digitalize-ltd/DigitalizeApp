@@ -1,0 +1,24 @@
+﻿<Styles xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Design.PreviewWith>
+        <Border Padding="20" />
+    </Design.PreviewWith>
+
+    <!--  main window style  -->
+    <Style Selector="Window">
+        <Setter Property="WindowState" Value="FullScreen" />
+        <Setter Property="WindowStartupLocation" Value="CenterOwner" />
+        <Setter Property="CanResize" Value="False" />
+        <Setter Property="FontFamily" Value="Montserrat" />
+        <Setter Property="Background" Value="Black" />
+    </Style>
+
+    <!--  main window border  -->
+    <Style Selector="Border#noBorder">
+
+        <Setter Property="BorderThickness" Value="0" />
+
+    </Style>
+
+</Styles>
+

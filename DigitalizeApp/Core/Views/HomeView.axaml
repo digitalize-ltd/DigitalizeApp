@@ -1,0 +1,75 @@
+<UserControl
+    x:Class="Core.Views.HomeView"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="using:Core.Views"
+    xmlns:vm="using:Core.ViewModels"
+    d:DesignHeight="600"
+    d:DesignWidth="800"
+    x:DataType="vm:HomeViewModel"
+    mc:Ignorable="d">
+
+    <Design.DataContext>
+        <vm:HomeViewModel />
+    </Design.DataContext>
+
+    <!--  the home view: contains the application main menu  -->
+    <Border>
+
+        <!--  layout grid  -->
+        <Grid
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            RowDefinitions="Auto, Auto, Auto">
+
+            <StackPanel
+                Grid.Row="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+
+                <!--  main menu buttons  -->
+                <Button Command="{Binding OpenPlanetaryDefensesCommand}" Theme="{StaticResource MainMenuButton}">
+                    <Image
+                        Width="50"
+                        Height="50"
+                        Source="/Assets/Images/earth.png" />
+                </Button>
+
+                <Button Command="{Binding OpenAGICommand}" Theme="{StaticResource MainMenuButton}">
+                    <Image
+                        Width="50"
+                        Height="50"
+                        Source="/Assets/Images/agi.png" />
+                </Button>
+
+                <Button Command="{Binding OpenEnergyLevelsCommand}" Theme="{StaticResource MainMenuButton}">
+                    <Image
+                        Width="50"
+                        Height="50"
+                        Source="/Assets/Images/energy.png" />
+                </Button>
+
+            </StackPanel>
+
+            <!--  separator  -->
+            <Border
+                Grid.Row="1"
+                Margin="0,30,0,30"
+                BorderBrush="#FB8B24"
+                BorderThickness="3" />
+
+            <!--  mouse over text  -->
+            <Border Grid.Row="2">
+
+                <TextBlock Text="digitalize.ltd" Theme="{StaticResource mainMenuText}" />
+
+            </Border>
+
+        </Grid>
+
+    </Border>
+
+</UserControl>

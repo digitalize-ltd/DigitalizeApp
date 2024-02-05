@@ -1,0 +1,59 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Design.PreviewWith>
+        <Border Padding="20">
+
+            <Button Content="text sample" Theme="{StaticResource AppControlButton}" />
+
+        </Border>
+    </Design.PreviewWith>
+
+    <!--  main menu buttons  -->
+    <ControlTheme x:Key="MainMenuButton" TargetType="Button">
+
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Margin" Value="30 0" />
+
+        <Setter Property="Template">
+            <ControlTemplate>
+                <ContentPresenter x:Name="PART_ContentPresenter" Content="{TemplateBinding Content}" />
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+
+    <!--  app control buttons  -->
+    <ControlTheme x:Key="AppControlButton" TargetType="Button">
+
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Margin" Value="0" />
+
+        <Setter Property="Template">
+            <ControlTemplate>
+                <ContentPresenter x:Name="PART_ContentPresenter" Content="{TemplateBinding Content}" />
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+
+    <!--  digitalize.ltd  -->
+    <ControlTheme x:Key="mainMenuText" TargetType="TextBlock">
+
+        <Setter Property="FontFamily" Value="Courier New" />
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="#FB8B24" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+
+    </ControlTheme>
+
+    <!--  main menu buttons  -->
+    <ControlTheme x:Key="pagesMainText" TargetType="TextBlock">
+
+        <Setter Property="FontFamily" Value="Courier New" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Foreground" Value="#FB8B24" />
+        <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+
+    </ControlTheme>
+
+</ResourceDictionary>

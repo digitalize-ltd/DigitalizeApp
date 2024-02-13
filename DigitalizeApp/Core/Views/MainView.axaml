@@ -32,7 +32,7 @@
                 <!--  content  -->
                 <ContentControl
                     Grid.Row="0"
-                    MaxWidth="500"
+                    MaxWidth="340"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Content="{Binding Content}" />
